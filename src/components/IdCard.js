@@ -1,6 +1,6 @@
 import React from 'react'
 
-function IdCard(props) {
+const IdCard = (props) => {
     return (
         <div>
             <h1>Id Card</h1>
