@@ -14,7 +14,7 @@ class ClickablePicture extends React.Component{
     render() {
     return (
         <div>
-        <img onClick={this.clickHandler} src={this.state.clicked ? './img/persons/maxence-glasses.png' : './img/persons/maxence.png'} alt='logo'/>
+        <img onClick={this.clickHandler} src={this.state.clicked ? `./img/persons/maxence-glasses.png` : './img/persons/maxence.png'} alt='logo'/>
         </div>
     )
     }
