@@ -1,5 +1,4 @@
-import React from 'react'
-//import masterCard from 'master-card.svg'
+import React from 'react' 
 const CreditCard = (props) => {
     
     const colour = {
@@ -7,21 +6,19 @@ const CreditCard = (props) => {
         color: `${props.color}`
     }
     
-    /*
     let image;
     switch (props.type) {
         case 'Visa':
-          image = `/public/img/visa.png`;
+          image = `./img/visa.png`;
           break;
         case 'Master Card':
-            image = `../public/img/master-card.svg`;
+            image = `./img/master-card.svg`;
             break;
       }
-      */
-
+      
     return (
         <div style={colour}>
-            <img src='#' alt='logo'/>
+            <img src={image} alt='logo'/>
             <p>{'*'.repeat((props.number).length-4)}{props.number.slice(props.number.length-4)}</p>
             <p>Expires {props.expirationMonth}/{props.expirationYear}</p>
             <p>{props.bank}</p>
